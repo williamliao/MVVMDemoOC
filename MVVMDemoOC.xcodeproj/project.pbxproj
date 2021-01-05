@@ -16,6 +16,12 @@
 		C88D760225A411940027B31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D760125A411940027B31F /* main.m */; };
 		C88D760C25A411940027B31F /* MVVMDemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D760B25A411940027B31F /* MVVMDemoOCTests.m */; };
 		C88D761725A411940027B31F /* MVVMDemoOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D761625A411940027B31F /* MVVMDemoOCUITests.m */; };
+		C88D762A25A411D60027B31F /* QualityLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D762925A411D60027B31F /* QualityLevel.m */; };
+		C88D763D25A413B50027B31F /* airQualityFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D763C25A413B50027B31F /* airQualityFetcher.m */; };
+		C88D764325A413C80027B31F /* airQualityParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D764225A413C80027B31F /* airQualityParser.m */; };
+		C88D764925A416440027B31F /* AirQualityDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D764825A416440027B31F /* AirQualityDisplay.m */; };
+		C88D765025A416AA0027B31F /* AirQualityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D764F25A416AA0027B31F /* AirQualityViewModel.m */; };
+		C88D765925A41A3D0027B31F /* AirQualityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,18 @@
 		C88D761225A411940027B31F /* MVVMDemoOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D761625A411940027B31F /* MVVMDemoOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMDemoOCUITests.m; sourceTree = "<group>"; };
 		C88D761825A411940027B31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88D762825A411D60027B31F /* QualityLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QualityLevel.h; sourceTree = "<group>"; };
+		C88D762925A411D60027B31F /* QualityLevel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QualityLevel.m; sourceTree = "<group>"; };
+		C88D763B25A413B50027B31F /* airQualityFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airQualityFetcher.h; sourceTree = "<group>"; };
+		C88D763C25A413B50027B31F /* airQualityFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = airQualityFetcher.m; sourceTree = "<group>"; };
+		C88D764125A413C80027B31F /* airQualityParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airQualityParser.h; sourceTree = "<group>"; };
+		C88D764225A413C80027B31F /* airQualityParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = airQualityParser.m; sourceTree = "<group>"; };
+		C88D764725A416440027B31F /* AirQualityDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirQualityDisplay.h; sourceTree = "<group>"; };
+		C88D764825A416440027B31F /* AirQualityDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirQualityDisplay.m; sourceTree = "<group>"; };
+		C88D764E25A416AA0027B31F /* AirQualityViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirQualityViewModel.h; sourceTree = "<group>"; };
+		C88D764F25A416AA0027B31F /* AirQualityViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirQualityViewModel.m; sourceTree = "<group>"; };
+		C88D765725A41A3D0027B31F /* AirQualityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirQualityTableViewCell.h; sourceTree = "<group>"; };
+		C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirQualityTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +122,14 @@
 		C88D75EE25A411910027B31F /* MVVMDemoOC */ = {
 			isa = PBXGroup;
 			children = (
+				C88D764D25A416990027B31F /* ViewModel */,
+				C88D763125A412440027B31F /* Service */,
+				C88D762725A411CB0027B31F /* Model */,
+				C88D765D25A41A930027B31F /* View */,
 				C88D75EF25A411910027B31F /* AppDelegate.h */,
 				C88D75F025A411910027B31F /* AppDelegate.m */,
 				C88D75F225A411910027B31F /* SceneDelegate.h */,
 				C88D75F325A411910027B31F /* SceneDelegate.m */,
-				C88D75F525A411910027B31F /* ViewController.h */,
-				C88D75F625A411910027B31F /* ViewController.m */,
 				C88D75F825A411910027B31F /* Main.storyboard */,
 				C88D75FB25A411940027B31F /* Assets.xcassets */,
 				C88D75FD25A411940027B31F /* LaunchScreen.storyboard */,
@@ -135,6 +155,48 @@
 				C88D761825A411940027B31F /* Info.plist */,
 			);
 			path = MVVMDemoOCUITests;
+			sourceTree = "<group>";
+		};
+		C88D762725A411CB0027B31F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C88D762825A411D60027B31F /* QualityLevel.h */,
+				C88D762925A411D60027B31F /* QualityLevel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C88D763125A412440027B31F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C88D763B25A413B50027B31F /* airQualityFetcher.h */,
+				C88D763C25A413B50027B31F /* airQualityFetcher.m */,
+				C88D764125A413C80027B31F /* airQualityParser.h */,
+				C88D764225A413C80027B31F /* airQualityParser.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C88D764D25A416990027B31F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C88D764E25A416AA0027B31F /* AirQualityViewModel.h */,
+				C88D764F25A416AA0027B31F /* AirQualityViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C88D765D25A41A930027B31F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C88D75F525A411910027B31F /* ViewController.h */,
+				C88D75F625A411910027B31F /* ViewController.m */,
+				C88D765725A41A3D0027B31F /* AirQualityTableViewCell.h */,
+				C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */,
+				C88D764725A416440027B31F /* AirQualityDisplay.h */,
+				C88D764825A416440027B31F /* AirQualityDisplay.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88D75F725A411910027B31F /* ViewController.m in Sources */,
+				C88D764925A416440027B31F /* AirQualityDisplay.m in Sources */,
 				C88D75F125A411910027B31F /* AppDelegate.m in Sources */,
+				C88D763D25A413B50027B31F /* airQualityFetcher.m in Sources */,
+				C88D762A25A411D60027B31F /* QualityLevel.m in Sources */,
+				C88D764325A413C80027B31F /* airQualityParser.m in Sources */,
+				C88D765025A416AA0027B31F /* AirQualityViewModel.m in Sources */,
 				C88D760225A411940027B31F /* main.m in Sources */,
+				C88D765925A41A3D0027B31F /* AirQualityTableViewCell.m in Sources */,
 				C88D75F425A411910027B31F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
