@@ -22,6 +22,8 @@
 		C88D764925A416440027B31F /* AirQualityDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D764825A416440027B31F /* AirQualityDisplay.m */; };
 		C88D765025A416AA0027B31F /* AirQualityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D764F25A416AA0027B31F /* AirQualityViewModel.m */; };
 		C88D765925A41A3D0027B31F /* AirQualityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */; };
+		C8941F6025A5BA1600F6B428 /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8941F5F25A5BA1600F6B428 /* SearchViewModel.m */; };
+		C8941F6625A5BA6E00F6B428 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8941F6525A5BA6E00F6B428 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		C88D764F25A416AA0027B31F /* AirQualityViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirQualityViewModel.m; sourceTree = "<group>"; };
 		C88D765725A41A3D0027B31F /* AirQualityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirQualityTableViewCell.h; sourceTree = "<group>"; };
 		C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirQualityTableViewCell.m; sourceTree = "<group>"; };
+		C8941F5E25A5BA1600F6B428 /* SearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewModel.h; sourceTree = "<group>"; };
+		C8941F5F25A5BA1600F6B428 /* SearchViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewModel.m; sourceTree = "<group>"; };
+		C8941F6425A5BA6E00F6B428 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C8941F6525A5BA6E00F6B428 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,8 @@
 			children = (
 				C88D764E25A416AA0027B31F /* AirQualityViewModel.h */,
 				C88D764F25A416AA0027B31F /* AirQualityViewModel.m */,
+				C8941F5E25A5BA1600F6B428 /* SearchViewModel.h */,
+				C8941F5F25A5BA1600F6B428 /* SearchViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +203,8 @@
 				C88D765825A41A3D0027B31F /* AirQualityTableViewCell.m */,
 				C88D764725A416440027B31F /* AirQualityDisplay.h */,
 				C88D764825A416440027B31F /* AirQualityDisplay.m */,
+				C8941F6425A5BA6E00F6B428 /* SearchViewController.h */,
+				C8941F6525A5BA6E00F6B428 /* SearchViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88D75F725A411910027B31F /* ViewController.m in Sources */,
+				C8941F6025A5BA1600F6B428 /* SearchViewModel.m in Sources */,
 				C88D764925A416440027B31F /* AirQualityDisplay.m in Sources */,
 				C88D75F125A411910027B31F /* AppDelegate.m in Sources */,
 				C88D763D25A413B50027B31F /* airQualityFetcher.m in Sources */,
@@ -337,6 +348,7 @@
 				C88D765025A416AA0027B31F /* AirQualityViewModel.m in Sources */,
 				C88D760225A411940027B31F /* main.m in Sources */,
 				C88D765925A41A3D0027B31F /* AirQualityTableViewCell.m in Sources */,
+				C8941F6625A5BA6E00F6B428 /* SearchViewController.m in Sources */,
 				C88D75F425A411910027B31F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

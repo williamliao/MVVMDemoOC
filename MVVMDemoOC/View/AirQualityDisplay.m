@@ -12,8 +12,8 @@
 - (instancetype)initWithQuality:(nonnull QualityLevel*)level {
     self = [super init];
     if (self) {
-        self.title = level.aqi;
-        self.subtitle = level.pm10;
+        self.aqi = level.aqi;
+        self.status = level.status;
         self.location = level.location;
     }
     return self;

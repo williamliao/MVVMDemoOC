@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSUInteger)numberOfItems;
 - (NSUInteger)numberOfSections;
 - (nullable AirQualityDisplay *)itemAtIndexPath:(NSIndexPath *)indexPath;
+
+@property (nonatomic, assign) BOOL isSearching;
+@property (nonatomic, strong) NSArray<AirQualityDisplay *> *filterItems;
+
+- (void)setIsSearching:(BOOL)isSearching;
 @end
 
 NS_ASSUME_NONNULL_END

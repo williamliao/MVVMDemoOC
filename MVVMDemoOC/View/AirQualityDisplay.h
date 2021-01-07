@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class QualityLevel;
 @interface AirQualityDisplay : NSObject
-@property (nonatomic, nullable) NSString *title;
-@property (nonatomic, nullable) NSString *subtitle;
 @property (nonatomic, nullable) NSString *location;
+@property (nonatomic, nullable) NSString *status;
+@property (nonatomic, nullable) NSString *aqi;
 
 - (instancetype)initWithQuality:(nonnull QualityLevel*)level;
 @end

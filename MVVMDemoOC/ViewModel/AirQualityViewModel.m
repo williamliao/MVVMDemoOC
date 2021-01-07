@@ -11,6 +11,7 @@
 @interface AirQualityViewModel()
 @property (nonatomic, strong) id<AirQualityFetcherProtocol> fetcher;
 @property (nonatomic, strong) NSArray<AirQualityDisplay *> *items;
+
 @end
 
 @implementation AirQualityViewModel
@@ -39,7 +40,11 @@
 }
 
 - (NSUInteger)numberOfItems {
-    return self.items.count;
+    if ([self isSearching]) {
+        return self.filterItems.count;
+    } else {
+        return self.items.count;
+    }
 }
 
 - (NSUInteger)numberOfSections {
@@ -47,9 +52,21 @@
 }
 
 - (AirQualityDisplay *)itemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row >= self.items.count) {
-        return nil;
+    
+    if ([self isSearching]) {
+        if (indexPath.row >= self.filterItems.count) {
+            return nil;
+        }
+        return self.filterItems[indexPath.row];
+    } else {
+        if (indexPath.row >= self.items.count) {
+            return nil;
+        }
+        return self.items[indexPath.row];
     }
-    return self.items[indexPath.row];
+}
+
+- (void)setIsSearching:(BOOL)isSearching {
+    _isSearching = isSearching;
 }
 @end

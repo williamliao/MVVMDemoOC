@@ -10,12 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QualityLevel : NSObject
-@property (nonatomic, strong) NSString * pm2_5;
-@property (nonatomic, strong) NSString * pm10;
+
+@property (nonatomic, strong) NSString * status;
 @property (nonatomic, strong) NSString * aqi;
 @property (nonatomic, strong) NSString * location;
 
-- (instancetype)initWithLocation:(NSString*)location aqi:(NSString*)aqi pm10:(NSString*)pm10 pm2_5:(NSString*)pm2_5;
+- (instancetype)initWithLocation:(NSString*)location aqi:(NSString*)aqi status:(NSString*)status;
 @end
 
 NS_ASSUME_NONNULL_END
